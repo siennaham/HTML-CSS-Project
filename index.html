@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Nectar</title> 
+
+        <meta name="author" content="Sienna Hamersley">
+        <meta name="description" content="Nectar: A healthy soft drink company">
+        <meta name="keywords" content="healthy, soft drinks, social, beach, drinking, no sugar, low carb, gut healthy">
+
+        <link rel="stylesheet" href="css/style.css">         
+        <link rel="icon" href="images/nectar(1).png" alt="Nectar Logo">    
+        
+    </head>
+<header>
+  <nav>
+
+<!--HEADER-->
+
+<!--“How to-Mobile Navigation Menu.” N.d. W3 Schools. Accessed November 8, 2022.
+https://www.w3schools.com/howto/howto_js_mobile_navbar.asp-->
+
+      <!--Hamburger Menu Link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+      <!-- Top Navigation Menu -->
+      <div class="topnav"> 
+        <a href="#home" class="active"> <img src="images/nectar.png" alt="Nectar Logo">
+        
+          <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="#ourdifference">Our Difference</a>
+          <a href="#stockists">Stockists</a>
+          <a href="#aboutus">About Us</a>
+          <a href="#ourproducts">Our Products</a>
+          <a href="#contactus">Contact Us</a>
+        </div>
+
+        <!-- "Hamburger menu" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <script>
+
+          /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
+  </nav>
+</header>
+
+    <body>
+
+     <!-- HOME SECTION  -->
+    <section id="home">
+        <h8>.. </h8>
+        <h6> ..</h6>
+        <h6>....</h6>
+        <h6> ..</h6>
+        <h6>....</h6>
+      <!--Images placed next to one another on the home page-->
+      <div class="row">
+        <div class="column">
+          <img src="images/Green Yellow Bold Geometric Class Education Website.png" alt="Nectar Drinks large retro text version of logo"
+          style="width:100%">
+        </div>
+
+        <div class="column">
+          <img src="images/text.png" alt="Text about the company Nectar Drinks"
+          style="width:100%"
+        </div>
+      </div>
+    </section>
+
+
+    <!--OUR DIFFERENCE SECTION-->
+    <section id="ourdifference">
+        <div class="box">
+            <div>
+            <img class="hero-img" src="images/hero.png" alt="Hero image-Infographic of a Nectar Drink with information about the drink">
+        </div>
+        </div>  
+    </section>
+
+     <!--STOCKISTS SECTION-->
+
+     <!--Collapsible menu-->
+    <section id="stockists">
+        <button type="button" class="collapsible">Stockists ↓ </button>
+        <div class="content">
+
+    <!--Content inside the collapsible menu-->
+    <p>Margaret River Bakery
+    </p>
+    <p>
+        Miller and Baker
+    </p>
+    <p>
+        Dunsborough Bakery
+    </p>
+    <p>
+        General Public Co
+    </p>
+    <p>
+        Chu Bakery
+    </p>
+    <p>
+        Hermanos en Cantina
+    </p>
+    <p>
+        Finlay and Sons
+    </p>
+    <p>
+        Mary St Bakery
+    </p>
+    <p>
+        Nogi Lane
+    </p>
+    <p>
+        Busselton Bakery
+    </p>
+
+    <!--“How to-Collapse.” n.d. W3 Schools. Accessed November 8, 2022.
+https://www.w3schools.com/howto/howto_js_collapsible.asp-->
+
+<!--Javescript needed to make collapsible menu interactive-->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+    </script>
+</div>
+
+<!--Images next to each other below the collapsible menu-->
+<div class="row2">
+  <div class="column2">
+    <img src="images/nectar(1).png" img class="Miller"
+    alt="Nectar Logo"
+    style="width:100%">
+  </div>
+
+  <div class="column2">
+    <img src="images/map.png" img class="Miller2"
+    alt="map of stockists"
+    style="width:100%">
+    </section>
+  </div>
+
+
+   <!--ABOUT US SECTION-->
+
+    <section id="aboutus"> 
+    <h6>...</h6>
+    <h2 style="padding: 10px; border: 2px solid lightgoldenrodyellow; background-color: lightgoldenrodyellow; ">About Us :)</h2>
+      
+    <!--Text Box and Image placed next to one another-->
+      <div class="row3">
+        <div class="column3">
+          <p> We're local to Margaret River and have been on a healthy eating and drinking journey for a few years.
+            We were sick of the unhealthy culture surrounding soft drinks so we made our own healthy ones! Our drinks are produced
+            in Margaret River, WA and the range is being launched in supermarkets and cafes around Western Australia!
+          </p>
+        </div>
+
+        <div class="column3">
+          <img src="images/beach.png" alt="Photo of a beach in Margaret River"img class="Beach"
+          style="width:100%">
+        </div>
+          </div>
+    </section>
+  </div>
+
+
+    <!--OUR PRODUCTS SECTION-->
+
+    <section id="ourproducts">
+        <h2 style="padding: 10px; border: 2px solid lightgoldenrodyellow; background-color: lightgoldenrodyellow; ">Our Product Range</h2>
+        <h3>Checkout the different flavours we have below!</h3>
+
+        <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img class="drink2-img" src="images/watermelon.png" alt="image of a Nectar drinks can watermelon flavour">
+      <div class="text">Watermelon</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <img class="drink-img" src="images/soft drink can.png" alt="Image of Nectar drinks can blackcurant flavour">
+      <div class="text">Blackcurrant</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <img class="drink3-img" src="images/orange.png" alt="Image of Nectar Drinks can blood orange flavour">
+      <div class="text">Blood Orange</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+//Javascript to make the slideshow interactive
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+  </script>
+    </section>
+
+
+     <!--CONTACT US SECTION-->
+
+     <!--“How to-Contact Form.” W3 Schools. Accessed November 8, 2022. 
+      https://www.w3schools.com/howto/howto_css_contact_form.asp-->
+
+    <section id="contactus">
+        <h2 style="padding: 10px; border: 2px solid lightgoldenrodyellow; background-color: lightgoldenrodyellow; ">Contact Us</h2>
+        <div class="container">
+            <form action="action_page.php">
+
+              <!--Interactive First Name box-->
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <!--Interactive Last Name box-->
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <!--Country choice box-->
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="newzealand">New Zealand</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <!--Interactive Subject box-->
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <!--Submit Button-->
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+    </section>
+
+<!--FOOTER SECTION-->
+
+    <footer>
+        <p>Please contact us below if you want to find out more information:</p>
+        <p>21 Salsbury St, Margaret River, WA</p>
+        <p>Phone: 0987654321</p>
+        <p>Email: Hello@nectardrink.com.au</p>
+      </footer>
+      
+    </body>
+</html>

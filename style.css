@@ -1,0 +1,417 @@
+/* ==========BASIC UNIVERSAL STYLING & CLEAN UP============= */
+    /* some basic css resetting */
+   html{
+    scroll-padding: 120px;
+    scroll-behavior: smooth;
+   }
+   @font-face {
+    font-family: "AlleyGarden";
+    src: url(BaksoSapi.otf);
+   }
+body { margin: 0; box-sizing: border-box; }
+a { text-decoration: none; color:black; }
+
+
+/* ==========Navigation Bar Styling============= */
+
+/*“How to-Mobile Navigation Menu.” N.d. W3 Schools. Accessed November 8, 2022.
+https://www.w3schools.com/howto/howto_js_mobile_navbar.asp*/
+
+.topnav {
+  overflow: hidden;
+  background-color: lightblue;
+  position: fixed; /* Setting the navbar to fixed position */
+  top: 0; /* Positioning the navbar at the top of the page */
+  width: 100%; /* Full width */
+ z-index: 99;
+}
+
+/* Hide the links inside the navigation menu (except for logo) */
+.topnav #myLinks {
+  display: none; 
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  background-color: lightgoldenrodyellow;
+  text-align: center;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: white ;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: salmon;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: lightgoldenrodyellow;
+}
+
+h6{
+  color: aquamarine;
+}
+
+/* ==========HOME SECTION STYLING============= */
+body{
+  background-color: aquamarine;
+  object-fit: contain;
+}
+
+/* Putting Images side by side (50% each)*/
+
+.column{
+float: left;
+width:50%;
+padding:5px;
+}
+
+.row::after{
+content:"";
+clear: both;
+display:table;
+}
+
+div{
+  font-size: x-large;
+  font-family: 'AlleyGarden', cursive;
+  word-spacing: 3px;
+  line-height: 60px;
+  max-width: 100%;
+}
+
+h4{
+  color: red;
+  font-size: x-large;
+  text-align: center;
+  word-spacing: 10px;
+}
+
+/* ==========OUR DIFFERENCE SECTION STYLING=============*/
+
+/*Creating a hero image that spans the whole section of the website*/
+.hero-img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+max-width: 100%;
+}
+
+/*  ==========STOCKISTS SECTION STYLING=============*/
+
+/*“How to-Collapse.” n.d. W3 Schools. Accessed November 8, 2022.
+https://www.w3schools.com/howto/howto_js_collapsible.asp*/
+
+
+/*Creating a collapsible menu that users can interact with*/
+.collapsible {
+  background-color: lightskyblue;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 35px;
+  font-family: 'AlleyGarden', cursive;
+}
+
+/* Add a background color to the button if it is clicked on and when you hover the mouse over it */
+.active, .collapsible:hover {
+  background-color: lightcoral;
+}
+
+/* Style the collapsible content*/
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  width: 100%;
+  text-align: center;
+}
+
+/*Placing images next to each other (50% each) below the collapsible menu*/
+.column2{
+  float: left;
+  width:50%;
+  padding:5px;
+}
+
+.row2::after{
+  content:"";
+  clear: both;
+  display:table;
+}
+
+.Miller{
+height: 500px;
+width: 200px;
+}
+
+.Miller2{
+height:600px;
+width:500px;
+}
+
+/* ==========ABOUT US SECTION STYLING=============*/
+
+/* Style the button that is used to open and close the collapsible content */
+.beach-img{
+    height: 910px;
+    width: 1483px;
+    object-fit: contain;
+    max-width: 100%;   
+}
+
+/*Placing image and text next to each other (50% each) */
+.column3{
+  float:left;
+  width: 50%;
+  padding: 5px;
+  }
+  
+  .row3::after{
+    content:"";
+    clear: both;
+    display: table;
+  }
+  
+  .About{
+    height: 300px;
+    width:50px;
+    right: 100px;
+  }
+
+/* ==========OUR PRODUCTS SECTION STYLING============= */
+
+h2{
+    font-family: 'AlleyGarden', cursive;
+    text-align: center;
+    text-size-adjust: 30px;
+    font-size: xx-large;
+  }
+
+h3{
+    font-family: "AlleyGarden", cursive;
+    text-align: center;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  height: 600px;
+  width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.drink-img{
+    height: 500px;
+    width: 350px;
+    object-fit: contain;
+}
+
+.drink2-img{
+    height: 500px;
+    width: 300px;
+    object-fit: contain;
+}
+
+.drink3-img{
+    height: 500px;
+    width: 300px;
+    object-fit: contain;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* ==========CONTACT US SECTION STYLING============= */
+
+/*“How to-Contact Form.” W3 Schools. Accessed November 8, 2022. 
+https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 5px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+/* ==========FOOTER SECTION SYLING============ */
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+    font-size: small;
+    font-family: 'AlleyGarden', cursive;
+  }
+
+/* ==========RESPONSIVE DESIGN============= */
+
+/* ===== TABLET: Media Queries ===== */
+
+@media only screen and (max-width: 768px)  {
+  .column{
+    width: 100%;
+  }
+  
+  .column2{
+    width: 100%;
+  }
+  
+  .column3{
+    width: 100%;
+  }
+  .nav a{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .nav{
+    float:none;
+  }
+}
+
+/* ===== MOBILE: Media queries for small mobile resolution. ===== */
+@media only screen and (max-width: 640px) { 
+  
+.column{
+  width: 100%;
+}
+
+.column2{
+  width: 100%;
+}
+
+.column3{
+  width: 100%;
+}
+.nav a{
+  float: none;
+  display: block;
+  text-align: left;
+}
+.nav{
+  float:none;
+}
+
+ beach-img{
+  height: 180px;
+  Width: 200%;
+ }
+}
